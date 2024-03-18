@@ -27,8 +27,6 @@ public class MainApp {
         changeElement(names,2);
         System.out.println(names[2]);
 
-
-
     }
     private static void changeElement(String [] nume,int indx){
         String newName = "Neko novo ime";
