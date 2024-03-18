@@ -12,7 +12,7 @@ public class MainApp {
 
 
     public static void main(String[] args) {
-        float [] ints = new float[10];
+        /*float [] ints = new float[10];
         int[] newInts= {10,30,-10,20,34,89,54};
         System.out.println("First array; " + ints.length);
         System.out.println("Snd array; " +newInts.length);
@@ -29,7 +29,9 @@ public class MainApp {
 
         //ints[10]=1000;
         changeElement(names,2);
-        System.out.println(names[2]);
+        System.out.println(names[2]);*/
+        populateStringNames(names);
+        listElements(names);
 
     }
     private static void changeElement(String [] nume,int indx){
@@ -46,7 +48,7 @@ public class MainApp {
     private static void populateStringNames(String[]numeOpet) {
         int cnt = 0;
         String name;
-        while (cnt < numeOpet.length - 1) {
+        while (cnt < numeOpet.length) {
             System.out.println("Unesi ime:\n");
             name = scanner.nextLine();
             numeOpet[cnt] = name;
@@ -54,7 +56,7 @@ public class MainApp {
         }
         System.out.println("Finished!");
     }
-    private void listElements(String[]names){
+    private static void listElements(String[]names){
         System.out.println("-------------------------------------");
         for (int k = 0; k<names.length; k++){
             System.out.println("Name: " + names[k]);
