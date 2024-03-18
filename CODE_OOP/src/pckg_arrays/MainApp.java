@@ -1,9 +1,13 @@
 package pckg_arrays;
 
+import java.util.Scanner;
+
 public class MainApp {
     private static int value;
     private static String name;
     private static String[] names = new String[5];
+    private static Scanner scanner = new Scanner(System.in);
+
 
 
 
@@ -39,4 +43,22 @@ public class MainApp {
         }
 
     }
+    private static void populateStringNames(String[]numeOpet) {
+        int cnt = 0;
+        String name;
+        while (cnt < numeOpet.length - 1) {
+            System.out.println("Unesi ime:\n");
+            name = scanner.nextLine();
+            numeOpet[cnt] = name;
+            cnt++;
+        }
+        System.out.println("Finished!");
+    }
+    private void listElements(String[]names){
+        System.out.println("-------------------------------------");
+        for (int k = 0; k<names.length; k++){
+            System.out.println("Name: " + names[k]);
+        }
+    }
+
 }
