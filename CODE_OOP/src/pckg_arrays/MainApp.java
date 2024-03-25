@@ -48,7 +48,7 @@ public class MainApp {
     private static void populateStringNames(String[]numeOpet) {
         int cnt = 0;
         String name;
-        while (cnt < numeOpet.length) {
+        while (cnt < numeOpet.length ) {
             System.out.println("Unesi ime:\n");
             name = scanner.nextLine();
             numeOpet[cnt] = name;
