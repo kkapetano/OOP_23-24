@@ -1,3 +1,5 @@
+package pckg_arrays;
+
 import java.util.concurrent.ThreadLocalRandom;
 
 public class AUX_CLS {
