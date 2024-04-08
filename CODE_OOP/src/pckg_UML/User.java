@@ -9,7 +9,7 @@ public class User {
     private static int cntID = 100;
 
 
-    public User(String userName,String password,String mail){
+    public User(String userName,String password){
         this.id = cntID++;
         this.mail=mail;
         this.userName=userName;

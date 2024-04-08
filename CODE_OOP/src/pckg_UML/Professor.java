@@ -1,16 +1,23 @@
 package pckg_UML;
 
-public class Professor extends User{
-    public Professor(String userName, String password, String mail) {
-        super(userName, password, mail);
+import java.util.ArrayList;
+
+public class Professor extends Person {
+    private ArrayList<Student> students;
+
+
+    public Professor(String userName, String password) {
+        super(userName, password);
+        students = new ArrayList<>();
+        System.out.println(this.getClass().getSimpleName() + " constructor called");
+
     }
 
-    @Override
-    public boolean activateAccount() {
-        return super.activateAccount();
-    }
 
-    public int getExam(String course){
-        return 5;
+    public void performConsultation(){
+        System.out.println(this.getClass().getSimpleName() + " gives consultative lecture to students...");
+        for (Student student : students) {
+            student.askQuestion();
+        }
     }
 }
