@@ -15,7 +15,7 @@ public class AUX_CLS {
     public static int[] populateArrayRandInt(int arrSize) {
         int[] arr = new int[arrSize];
         for (int k = 0; k < arrSize; k++) {
-            int numElement = ThreadLocalRandom.current().nextInt(MIN, MAX);
+            int numElement = ThreadLocalRandom.current().nextInt(MIN,MAX);
             arr[k] = numElement;
         }
         return arr;
@@ -24,7 +24,7 @@ public class AUX_CLS {
     public static void listIntArray(int[] arr) {
         int size = arr.length;
         for (int i = 0; i < size; i++) {
-            System.out.print("Element: " + arr[i] + "");
+            System.out.print("Element: " + arr[i] + "\t");
         }
     }
 
@@ -34,7 +34,7 @@ public class AUX_CLS {
         int idx = 0;
         while (idx<size) {
             System.out.println("Please enter one int number: ");
-            int num = getIntFromStandardInput();
+            int num= getIntFromStandardInput();
             arr[idx] = num;
             idx++;
         }

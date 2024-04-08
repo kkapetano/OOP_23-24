@@ -7,10 +7,10 @@ public class TestArr {
 
         int[] arr = AUX_CLS.populateArrayRandInt(5);
         System.out.println(Arrays.toString(arr));
-        //AUX_CLS.listIntArray(arr);
+        AUX_CLS.listIntArray(arr);
 
-       // int[]arrNew = AUX_CLS.userPopulatedArray(3);
-        //AUX_CLS.listIntArray(arrNew);
+        int[]arrNew = AUX_CLS.userPopulatedArray(3);
+        AUX_CLS.listIntArray(arrNew);
         String[]strArr={"Vasa","Vasa plurimum", "sonant",};
         String linked = AUX_CLS.linkStringsUsingJoin(strArr);
         System.out.println(linked);
